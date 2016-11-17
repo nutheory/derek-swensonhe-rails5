@@ -1,47 +1,349 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Product.create({
+sku: "CM001",
+description: "small machine",
+size: "small",
+product_type: "base model",
+flavor: nil,
+water_line_compatible: nil,
+quantity: nil,
+})
 
+Product.create({
+sku: "CM002",
+description: "small machine",
+size: "small",
+product_type: "premium model",
+flavor: nil,
+water_line_compatible: nil,
+quantity: nil,
+})
 
+Product.create({
+sku: "CM003",
+description: "small machine",
+size: "large",
+product_type: "deluxe model",
+flavor: nil,
+water_line_compatible: true,
+quantity: nil,
+})
 
+Product.create({
+sku: "CM101",
+description: "large machine",
+size: "large",
+product_type: "base model",
+flavor: nil,
+water_line_compatible: true,
+quantity: nil,
+})
 
+Product.create{[
+sku: "CM102",
+description: "large machine",
+size: "large",
+product_type: "premium model",
+flavor: nil,
+water_line_compatible: true,
+quantity: nil,
+]}
 
-# CM001 – small machine, base model
-# CM002 – small machine, premium model
-# CM003 – small machine, deluxe model, water line compatible
-# CM101 – large machine, base model
-# • CM102 – large machine, premium model, water line compatible
-# • CM103 – large machine, deluxe model, water line compatible
-# • EM001 – espresso machine, base model
-# • EM002 – espresso machine, premium model
-# • EM003 – espresso machine, deluxe model, water line compatible
-# • CP001 – small coffee pod, 1 dozen, vanilla
-# • CP003 – small coffee pod, 3 dozen, vanilla
-# • CP011 – small coffee pod, 1 dozen, caramel
-# • CP013 – small coffee pod, 3 dozen, caramel
-# • CP021 – small coffee pod, 1 dozen, psl
-# • CP023 – small coffee pod, 3 dozen, psl
-# • CP031 – small coffee pod, 1 dozen, mocha
-# • CP033 – small coffee pod, 3 dozen, mocha
-# • CP041 – small coffee pod, 1 dozen, hazelnut
-# • CP043 – small coffee pod, 3 dozen, hazelnut
-# • CP101 – large coffee pod, 1 dozen, vanilla
-# • CP103 – large coffee pod, 3 dozen, vanilla
-# • CP111 – large coffee pod, 1 dozen, caramel
-# • CP113 – large coffee pod, 3 dozen, caramel
-# • CP121 – large coffee pod, 1 dozen, psl
-# • CP123 – large coffee pod, 3 dozen, psl
-# • CP131 – large coffee pod, 1 dozen, mocha
-# • CP133 – large coffee pod, 3 dozen, mocha
-# • CP141 – large coffee pod, 1 dozen, hazelnut
-# • CP143 – large coffee pod, 3 dozen, hazelnut
-# • EP003 – espresso pod, 3 dozen, vanilla
-# • EP005 – espresso pod, 5 dozen, vanilla
-# • EP007 – espresso pod, 7 dozen, vanilla
-# • EP013 – espresso pod, 3 dozen, caramel
-# • EP015 – espresso pod, 5 dozen, caramel
-# • EP017 – espresso pod, 7 dozen, caramel
+Product.create({
+sku: "CM103",
+description: "large machine",
+size: "large",
+product_type: "deluxe model",
+flavor: nil,
+water_line_compatible: true,
+quantity: nil,
+})
+
+Product.create({
+sku: "EM001",
+description: "espresso machine",
+size: "large",
+product_type: "base model",
+flavor: nil,
+water_line_compatible: nil,
+quantity: nil,
+})
+
+Product.create({
+sku: "EM002",
+description: "espresso machine",
+size: nil,
+product_type: "premium model",
+flavor: nil,
+water_line_compatible: nil,
+quantity: nil,
+})
+
+Product.create({
+sku: "EM003",
+description: "espresso machine",
+size: nil,
+product_type: "deluxe model",
+flavor: nil,
+water_line_compatible: true,
+quantity: nil,
+})
+
+Product.create({
+sku: "CP001",
+description: "coffee pod",
+size: "small",
+product_type: "coffee pod",
+flavor: "vanilla",
+water_line_compatible: nil,
+quantity: 12,
+})
+
+Product.create({
+sku: "CP003",
+description: "coffee pod",
+size: "small",
+product_type: "coffee pod",
+flavor: "vanilla",
+water_line_compatible: nil,
+quantity: 36,
+})
+
+Product.create({
+sku: "CP011",
+description: "coffee pod",
+size: "small",
+product_type: "coffee pod",
+flavor: "caramel",
+water_line_compatible: nil,
+quantity: 12,
+})
+
+Product.create({
+sku: "CP013",
+description: "coffee pod",
+size: "small",
+product_type: "coffee pod",
+flavor: "caramel",
+water_line_compatible: nil,
+quantity: 36,
+})
+
+Product.create({
+sku: "CP021",
+description: "coffee pod",
+size: "small",
+product_type: "coffee pod",
+flavor: "psl",
+water_line_compatible: nil,
+quantity: 12,
+})
+
+Product.create({
+sku: "CP023",
+description: "coffee pod",
+size: "small",
+product_type: "coffee pod",
+flavor: "psl",
+water_line_compatible: nil,
+quantity: 36,
+})
+
+Product.create({
+sku: "CP031",
+description: "coffee pod",
+size: "small",
+product_type: "coffee pod",
+flavor: "mocha",
+water_line_compatible: nil,
+quantity: 12,
+})
+
+Product.create({
+sku: "CP033",
+description: "coffee pod",
+size: "small",
+product_type: "coffee pod",
+flavor: "mocha",
+water_line_compatible: nil,
+quantity: 36,
+})
+
+Product.create({
+sku: "CP041",
+description: "coffee pod",
+size: "small",
+product_type: "coffee pod",
+flavor: "hazelnut",
+water_line_compatible: nil,
+quantity: 12,
+})
+
+Product.create({
+sku: "CP043",
+description: "coffee pod",
+size: "small",
+product_type: "coffee pod",
+flavor: "hazelnut",
+water_line_compatible: nil,
+quantity: 36,
+})
+
+Product.create({
+sku: "CP101",
+description: "coffee pod",
+size: "large",
+product_type: "coffee pod",
+flavor: "vanilla",
+water_line_compatible: nil,
+quantity: 12,
+})
+
+Product.create({
+sku: "CP103",
+description: "coffee pod",
+size: "large",
+product_type: "coffee pod",
+flavor: "vanilla",
+water_line_compatible: nil,
+quantity: 36,
+})
+
+Product.create({
+sku: "CP111",
+description: "coffee pod",
+size: "large",
+product_type: "coffee pod",
+flavor: "caramel",
+water_line_compatible: nil,
+quantity: 12,
+})
+
+Product.create({
+sku: "CP113",
+description: "coffee pod",
+size: "large",
+product_type: "coffee pod",
+flavor: "caramel",
+water_line_compatible: nil,
+quantity: 36,
+})
+
+Product.create({
+sku: "CP121",
+description: "coffee pod",
+size: "large",
+product_type: "coffee pod",
+flavor: "psl",
+water_line_compatible: nil,
+quantity: 12,
+})
+
+Product.create({
+sku: "CP123",
+description: "coffee pod",
+size: "large",
+product_type: "coffee pod",
+flavor: "psl",
+water_line_compatible: nil,
+quantity: 36,
+})
+
+Product.create({
+sku: "CP131",
+description: "coffee pod",
+size: "large",
+product_type: "coffee pod",
+flavor: "mocha",
+water_line_compatible: nil,
+quantity: 12,
+})
+
+Product.create({
+sku: "CP133",
+description: "coffee pod",
+size: "large",
+product_type: "coffee pod",
+flavor: "mocha",
+water_line_compatible: nil,
+quantity: 36,
+})
+
+Product.create({
+sku: "CP141",
+description: "coffee pod",
+size: "large",
+product_type: "coffee pod",
+flavor: "hazelnut",
+water_line_compatible: nil,
+quantity: 12,
+})
+
+Product.create({
+sku: "CP143",
+description: "coffee pod",
+size: "large",
+product_type: "coffee pod",
+flavor: "hazelnut",
+water_line_compatible: nil,
+quantity: 36,
+})
+
+Product.create({
+sku: "EP003",
+description: "espresso pod",
+size: nil,
+product_type: "espresso pod",
+flavor: "vanilla",
+water_line_compatible: nil,
+quantity: 36,
+})
+
+Product.create({
+sku: "EP005",
+description: "espresso pod",
+size: nil,
+product_type: "espresso pod",
+flavor: "vanilla",
+water_line_compatible: nil,
+quantity: 60,
+})
+
+Product.create({
+sku: "EP007",
+description: "espresso pod",
+size: nil,
+product_type: "espresso pod",
+flavor: "vanilla",
+water_line_compatible: nil,
+quantity: 72,
+})
+
+Product.create({
+sku: "EP013",
+description: "espresso pod",
+size: nil,
+product_type: "espresso pod",
+flavor: "caramel",
+water_line_compatible: nil,
+quantity: 36,
+})
+
+Product.create({
+sku: "EP015",
+description: "espresso pod",
+size: nil,
+product_type: "espresso pod",
+flavor: "caramel",
+water_line_compatible: nil,
+quantity: 60,
+})
+
+Product.create({
+sku: "EP017",
+description: "espresso pod",
+size: nil,
+product_type: "espresso pod",
+flavor: "caramel",
+water_line_compatible: nil,
+quantity: 72,
+})
