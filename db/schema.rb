@@ -10,33 +10,39 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161116205506) do
+ActiveRecord::Schema.define(version: 20161118054225) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "coffee_machines", force: :cascade do |t|
-    t.string  "product_type"
-    t.string  "product_type_key"
-    t.boolean "water_line_compatible", default: false
+  create_table "machines", force: :cascade do |t|
+    t.string   "sku"
+    t.string   "beverage"
+    t.string   "model"
+    t.string   "size"
+    t.string   "description"
+    t.boolean  "water_line_compatible", default: false
+    t.datetime "created_at",                            null: false
+    t.datetime "updated_at",                            null: false
   end
 
-  create_table "coffee_pods", force: :cascade do |t|
-    t.string  "product_type"
-    t.string  "product_type_key"
-    t.string  "coffee_flavor"
-    t.string  "coffee_flavor_key"
-    t.integer "pack_size",         default: 12
+  create_table "pods", force: :cascade do |t|
+    t.string   "sku"
+    t.string   "beverage"
+    t.string   "size"
+    t.string   "description"
+    t.string   "flavor"
+    t.integer  "quantity",    default: 1
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
   create_table "products", force: :cascade do |t|
-    t.string  "sku"
-    t.string  "description"
-    t.string  "size"
-    t.string  "product_type"
-    t.string  "flavor"
-    t.boolean "water_line_compatible"
-    t.integer "quantity"
+    t.integer  "machine_id"
+    t.integer  "pod_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["machine_id", "pod_id"], name: "index_products_on_machine_id_and_pod_id", using: :btree
   end
 
 end

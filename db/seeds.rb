@@ -1,349 +1,341 @@
-Product.create({
+Machine.create({
 sku: "CM001",
 description: "small machine",
 size: "small",
-product_type: "base model",
-flavor: nil,
+beverage: "coffee",
+model: "base",
 water_line_compatible: nil,
-quantity: nil,
 })
 
-Product.create({
+Machine.create({
 sku: "CM002",
 description: "small machine",
 size: "small",
-product_type: "premium model",
-flavor: nil,
+beverage: "coffee",
+model: "premium",
 water_line_compatible: nil,
-quantity: nil,
 })
 
-Product.create({
+Machine.create({
 sku: "CM003",
 description: "small machine",
-size: "large",
-product_type: "deluxe model",
-flavor: nil,
+size: "small",
+beverage: "coffee",
+model: "deluxe",
 water_line_compatible: true,
-quantity: nil,
 })
 
-Product.create({
+Machine.create({
 sku: "CM101",
 description: "large machine",
 size: "large",
-product_type: "base model",
-flavor: nil,
+beverage: "coffee",
+model: "base",
 water_line_compatible: true,
-quantity: nil,
 })
 
-Product.create{[
+Machine.create{[
 sku: "CM102",
 description: "large machine",
 size: "large",
-product_type: "premium model",
-flavor: nil,
+beverage: "coffee",
+model: "premium",
 water_line_compatible: true,
-quantity: nil,
 ]}
 
-Product.create({
+Machine.create({
 sku: "CM103",
 description: "large machine",
 size: "large",
-product_type: "deluxe model",
-flavor: nil,
+beverage: "coffee",
+model: "deluxe",
 water_line_compatible: true,
-quantity: nil,
 })
 
-Product.create({
+Machine.create({
 sku: "EM001",
 description: "espresso machine",
-size: "large",
-product_type: "base model",
-flavor: nil,
+size: nil,
+beverage: "espresso",
+model: "base",
 water_line_compatible: nil,
-quantity: nil,
 })
 
-Product.create({
+Machine.create({
 sku: "EM002",
 description: "espresso machine",
 size: nil,
-product_type: "premium model",
-flavor: nil,
+beverage: "espresso",
+model: "premium",
 water_line_compatible: nil,
-quantity: nil,
 })
 
-Product.create({
+Machine.create({
 sku: "EM003",
 description: "espresso machine",
 size: nil,
-product_type: "deluxe model",
-flavor: nil,
+beverage: "espresso",
+model: "deluxe",
 water_line_compatible: true,
-quantity: nil,
 })
 
-Product.create({
+Pod.create({
 sku: "CP001",
 description: "coffee pod",
 size: "small",
-product_type: "coffee pod",
+beverage: "coffee",
 flavor: "vanilla",
-water_line_compatible: nil,
-quantity: 12,
+quantity: 1,
 })
 
-Product.create({
+Pod.create({
 sku: "CP003",
 description: "coffee pod",
 size: "small",
-product_type: "coffee pod",
+beverage: "coffee",
 flavor: "vanilla",
-water_line_compatible: nil,
-quantity: 36,
+quantity: 3,
 })
 
-Product.create({
+Pod.create({
 sku: "CP011",
 description: "coffee pod",
 size: "small",
-product_type: "coffee pod",
+beverage: "coffee",
 flavor: "caramel",
-water_line_compatible: nil,
-quantity: 12,
+quantity: 1,
 })
 
-Product.create({
+Pod.create({
 sku: "CP013",
 description: "coffee pod",
 size: "small",
-product_type: "coffee pod",
+beverage: "coffee",
 flavor: "caramel",
-water_line_compatible: nil,
-quantity: 36,
+quantity: 3,
 })
 
-Product.create({
+Pod.create({
 sku: "CP021",
 description: "coffee pod",
 size: "small",
-product_type: "coffee pod",
+beverage: "coffee",
 flavor: "psl",
-water_line_compatible: nil,
-quantity: 12,
+quantity: 1,
 })
 
-Product.create({
+Pod.create({
 sku: "CP023",
 description: "coffee pod",
 size: "small",
-product_type: "coffee pod",
+beverage: "coffee",
 flavor: "psl",
-water_line_compatible: nil,
-quantity: 36,
+quantity: 3,
 })
 
-Product.create({
+Pod.create({
 sku: "CP031",
 description: "coffee pod",
 size: "small",
-product_type: "coffee pod",
+beverage: "coffee",
 flavor: "mocha",
-water_line_compatible: nil,
-quantity: 12,
+quantity: 1,
 })
 
-Product.create({
+Pod.create({
 sku: "CP033",
 description: "coffee pod",
 size: "small",
-product_type: "coffee pod",
+beverage: "coffee",
 flavor: "mocha",
-water_line_compatible: nil,
-quantity: 36,
+quantity: 3,
 })
 
-Product.create({
+Pod.create({
 sku: "CP041",
 description: "coffee pod",
 size: "small",
-product_type: "coffee pod",
+beverage: "coffee",
 flavor: "hazelnut",
-water_line_compatible: nil,
-quantity: 12,
+quantity: 1,
 })
 
-Product.create({
+Pod.create({
 sku: "CP043",
 description: "coffee pod",
 size: "small",
-product_type: "coffee pod",
+beverage: "coffee",
 flavor: "hazelnut",
-water_line_compatible: nil,
-quantity: 36,
+quantity: 3,
 })
 
-Product.create({
+Pod.create({
 sku: "CP101",
 description: "coffee pod",
 size: "large",
-product_type: "coffee pod",
+beverage: "coffee",
 flavor: "vanilla",
-water_line_compatible: nil,
-quantity: 12,
+quantity: 1,
 })
 
-Product.create({
+Pod.create({
 sku: "CP103",
 description: "coffee pod",
 size: "large",
-product_type: "coffee pod",
+beverage: "coffee",
 flavor: "vanilla",
-water_line_compatible: nil,
-quantity: 36,
+quantity: 3,
 })
 
-Product.create({
+Pod.create({
 sku: "CP111",
 description: "coffee pod",
 size: "large",
-product_type: "coffee pod",
+beverage: "coffee",
 flavor: "caramel",
-water_line_compatible: nil,
-quantity: 12,
+quantity: 1,
 })
 
-Product.create({
+Pod.create({
 sku: "CP113",
 description: "coffee pod",
 size: "large",
-product_type: "coffee pod",
+beverage: "coffee",
 flavor: "caramel",
-water_line_compatible: nil,
-quantity: 36,
+quantity: 3,
 })
 
-Product.create({
+Pod.create({
 sku: "CP121",
 description: "coffee pod",
 size: "large",
-product_type: "coffee pod",
+beverage: "coffee",
 flavor: "psl",
-water_line_compatible: nil,
-quantity: 12,
+quantity: 1,
 })
 
-Product.create({
+Pod.create({
 sku: "CP123",
 description: "coffee pod",
 size: "large",
-product_type: "coffee pod",
+beverage: "coffee",
 flavor: "psl",
-water_line_compatible: nil,
-quantity: 36,
+quantity: 3,
 })
 
-Product.create({
+Pod.create({
 sku: "CP131",
 description: "coffee pod",
 size: "large",
-product_type: "coffee pod",
+beverage: "coffee",
 flavor: "mocha",
-water_line_compatible: nil,
-quantity: 12,
+quantity: 1,
 })
 
-Product.create({
+Pod.create({
 sku: "CP133",
 description: "coffee pod",
 size: "large",
-product_type: "coffee pod",
+beverage: "coffee",
 flavor: "mocha",
-water_line_compatible: nil,
-quantity: 36,
+quantity: 3,
 })
 
-Product.create({
+Pod.create({
 sku: "CP141",
 description: "coffee pod",
 size: "large",
-product_type: "coffee pod",
+beverage: "coffee",
 flavor: "hazelnut",
-water_line_compatible: nil,
-quantity: 12,
+quantity: 1,
 })
 
-Product.create({
+Pod.create({
 sku: "CP143",
 description: "coffee pod",
 size: "large",
-product_type: "coffee pod",
+beverage: "coffee",
 flavor: "hazelnut",
-water_line_compatible: nil,
-quantity: 36,
+quantity: 3,
 })
 
-Product.create({
+Pod.create({
 sku: "EP003",
 description: "espresso pod",
 size: nil,
-product_type: "espresso pod",
+beverage: "espresso",
 flavor: "vanilla",
-water_line_compatible: nil,
-quantity: 36,
+quantity: 3,
 })
 
-Product.create({
+Pod.create({
 sku: "EP005",
 description: "espresso pod",
 size: nil,
-product_type: "espresso pod",
+beverage: "espresso",
 flavor: "vanilla",
-water_line_compatible: nil,
-quantity: 60,
+quantity: 5,
 })
 
-Product.create({
+Pod.create({
 sku: "EP007",
 description: "espresso pod",
 size: nil,
-product_type: "espresso pod",
+beverage: "espresso",
 flavor: "vanilla",
-water_line_compatible: nil,
-quantity: 72,
+quantity: 7,
 })
 
-Product.create({
+Pod.create({
 sku: "EP013",
 description: "espresso pod",
 size: nil,
-product_type: "espresso pod",
+beverage: "espresso",
 flavor: "caramel",
-water_line_compatible: nil,
-quantity: 36,
+quantity: 3,
 })
 
-Product.create({
+Pod.create({
 sku: "EP015",
 description: "espresso pod",
 size: nil,
-product_type: "espresso pod",
+beverage: "espresso",
 flavor: "caramel",
-water_line_compatible: nil,
-quantity: 60,
+quantity: 5,
 })
 
-Product.create({
+Pod.create({
 sku: "EP017",
 description: "espresso pod",
 size: nil,
-product_type: "espresso pod",
+beverage: "espresso",
 flavor: "caramel",
-water_line_compatible: nil,
-quantity: 72,
+quantity: 7,
 })
+
+1.upto(3) do |mi|
+  1.upto(10) do |i|
+    Product.create({
+      machine_id: mi,
+      pod_id: i,
+    })
+  end
+end
+
+4.upto(6) do |mi|
+  11.upto(20) do |i|
+    Product.create({
+      machine_id: mi,
+      pod_id: i,
+    })
+  end
+end
+
+7.upto(9) do |mi|
+  21.upto(26) do |i|
+    Product.create({
+      machine_id: mi,
+      pod_id: i,
+    })
+  end
+end
